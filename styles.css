@@ -25,26 +25,42 @@ section, .skills, .edu-card, .exp-card, .project-cards > .card {
 
 
 .header {
-  display: flex;
-  gap: 18px;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 18px;
+    background: none;
+    box-shadow: none;
+    padding: 0;
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 14px;
-  object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 14px;
+    border: none;
+    object-fit: cover;
+    background: #eaeaea;
+}
+
+.intro {
+    border-radius: 14px;
+    background: #fff;
+    border: none;
+    padding: 0;
+    box-shadow: none;
 }
 
 .intro h1 {
-  margin: 0 0 8px;
-  font-size: 1.5rem;
+    font-size: 1.5rem;
+    margin: 0 0 8px 0;
+    font-weight: 700;
 }
 
 .intro p {
-  margin: 0;
-  font-size: 1rem;
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
 }
 
 .proficiency-box,
