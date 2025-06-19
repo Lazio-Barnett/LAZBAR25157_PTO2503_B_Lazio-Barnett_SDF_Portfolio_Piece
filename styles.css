@@ -1,18 +1,28 @@
 body {
-  background: #f0f0f0;
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
+    background: #7a7a7a url('https://www.transparenttextures.com/patterns/symphony.png');
+    min-height: 100vh;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  max-width: 430px;
-  margin: auto;
-  padding: 32px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
+
+section, .skills, .edu-card, .exp-card, .project-cards > .card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 24px;
+    margin-bottom: 0;
+}
+
 
 .header {
   display: flex;
