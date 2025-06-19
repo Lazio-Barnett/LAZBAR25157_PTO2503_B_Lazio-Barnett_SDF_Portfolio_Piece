@@ -9,7 +9,7 @@ body {
 .container {
     max-width: 430px;
     margin: 0 auto;
-    padding: 32px 0;
+    padding: 32px 16px; /* Add horizontal padding */
     display: flex;
     flex-direction: column;
     gap: 24px;
