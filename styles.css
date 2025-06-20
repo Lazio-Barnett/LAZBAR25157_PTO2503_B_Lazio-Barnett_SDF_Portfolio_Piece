@@ -128,8 +128,14 @@ section, .skills, .edu-card, .exp-card, .project-cards > .card {
 
 .project-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 18px;
+}
+
+@media (min-width: 600px) {
+  .project-cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .card {
@@ -142,6 +148,8 @@ section, .skills, .edu-card, .exp-card, .project-cards > .card {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card.featured {
@@ -179,8 +187,10 @@ section, .skills, .edu-card, .exp-card, .project-cards > .card {
   font-weight: 600;
 }
 
-@media (max-width: 600px) {
-  .project-cards {
-    grid-template-columns: 1fr;
+/* Responsive font and padding for small screens */
+@media (max-width: 400px) {
+  .card {
+    padding: 14px 6px;
+    font-size: 0.95rem;
   }
 }
