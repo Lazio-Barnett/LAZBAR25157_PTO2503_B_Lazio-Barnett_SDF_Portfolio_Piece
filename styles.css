@@ -345,10 +345,86 @@ section, .skills, .edu-card, .exp-card, .project-cards > .card {
   color: #fff;
 }
 
-/* Responsive adjustments */
+/* Tools section styles */
+.tools-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.tool-card {
+  background: #e6eae7;
+  border-radius: 18px;
+  padding: 32px 24px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  min-height: 180px;
+  flex: 1 1 180px;
+  max-width: 220px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.tool-card-label {
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 4px 18px;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  letter-spacing: 0.02em;
+}
+
+.tool-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.tool-icons img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin: 0 6px;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 900px) {
+  .tools-cards {
+    gap: 14px;
+  }
+  .tool-card {
+    padding: 18px 8px 14px 8px;
+    min-width: 100px;
+    max-width: 160px;
+  }
+  .tool-icons img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
 @media (max-width: 600px) {
-  .edu-card, .edu-card.featured {
-    padding: 14px 6px;
-    font-size: 0.95rem;
+  .tools-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .tool-card {
+    width: 100%;
+    max-width: 350px;
+    min-width: 0;
   }
 }
